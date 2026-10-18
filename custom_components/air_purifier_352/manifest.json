@@ -1,0 +1,12 @@
+{
+  "domain": "air_purifier_352",
+  "name": "352 Air Purifier",
+  "codeowners": ["@mylofsh"],
+  "config_flow": true,
+  "documentation": "https://github.com/mylofsh/ha-air-purifier-352",
+  "issue_tracker": "https://github.com/mylofsh/ha-air-purifier-352/issues",
+  "iot_class": "cloud_polling",
+  "version": "1.1.0",
+  "requirements": ["aiohttp"],
+  "dependencies": []
+}

@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "352 空气净化器",
+        "description": "用 352 账号密码自动登录，无需手动获取令牌。\n\nappSecret 为 352 App 内置的阿里云网关签名密钥，需通过反编译 App 获取。",
+        "data": {
+          "account": "352 账号（手机号）",
+          "password": "密码",
+          "area": "国家区号",
+          "app_secret": "appSecret（阿里云网关签名密钥）",
+          "scan_interval": "轮询间隔（秒）"
+        }
+      }
+    },
+    "error": {
+      "auth_failed": "登录失败：请检查账号密码是否正确。",
+      "no_devices": "登录成功，但该账号下未找到设备。",
+      "sign_failed": "网关签名校验失败：请确认 appSecret 是否正确。",
+      "api_error": "接口调用失败，请查看日志了解详情。",
+      "unknown": "发生未知错误，请查看日志。"
+    },
+    "abort": {
+      "already_configured": "该账号已配置。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "更新配置",
+        "description": "修改账号密码或 appSecret。留空的字段保持原值。\n保存后会重新登录并重载集成，无需删除重建。",
+        "data": {
+          "account": "352 账号（留空则不变）",
+          "password": "密码（留空则不变）",
+          "app_secret": "appSecret（留空则不变）",
+          "scan_interval": "轮询间隔（秒）"
+        }
+      }
+    },
+    "error": {
+      "auth_failed": "登录失败：请检查账号密码是否正确。",
+      "sign_failed": "网关签名校验失败：请确认 appSecret 是否正确。",
+      "api_error": "接口调用失败，请查看日志了解详情。",
+      "unknown": "发生未知错误，请查看日志。"
+    }
+  }
+}
